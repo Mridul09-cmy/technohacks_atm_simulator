@@ -1,0 +1,21 @@
+We define a class called ATM. This class represents the ATM object and contains methods to perform various operations.
+
+In the __init__ method, we initialize the initial balance to 0, the PIN to None, and the login status to False.
+
+The login method prompts the user to enter their PIN. In this basic example, the correct PIN is hardcoded as "1234". If the entered PIN matches the correct PIN, the user is logged in by setting the logged_in attribute to True. Otherwise, the login fails.
+
+The logout method simply sets the logged_in attribute to False and prints a message indicating successful logout.
+
+The check_balance method checks if the user is logged in. If they are, it displays their current balance. Otherwise, it prompts them to log in first.
+
+The deposit method allows the user to deposit money into their account. If they are logged in, it prompts them to enter the amount to deposit and adds that amount to their balance. It then prints a message indicating successful deposit. If the user is not logged in, it prompts them to log in first.
+
+The withdraw method allows the user to withdraw money from their account. If they are logged in, it prompts them to enter the amount to withdraw. It checks if the requested amount is greater than the available balance and displays an error message if it is. Otherwise, it subtracts the amount from the balance and prints a message indicating successful withdrawal. If the user is not logged in, it prompts them to log in first.
+
+The main function is the entry point of the program. It creates an instance of the ATM class and runs a loop that displays a menu of options to the user.
+
+Inside the loop, it prompts the user to enter their choice and performs the corresponding action based on the choice. For example, if the user chooses option 1, it calls the login method of the ATM instance.
+
+The loop continues until the user chooses the exit option (option 6), at which point it breaks out of the loop and the program terminates.
+
+Overall, this code provides a basic ATM simulation where users can log in, check their balance, deposit money, withdraw money, and log out. You can modify and expand upon this code to add more features and functionality based on your requirements.
